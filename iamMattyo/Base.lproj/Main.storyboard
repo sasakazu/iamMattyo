@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SkE-ll-1QB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Interval" id="wwZ-Sj-gqh"/>
+                    <tabBarItem key="tabBarItem" title="Interval" image="interval.png" id="wwZ-Sj-gqh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7n-hc-lLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ymw-or-9Ml"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Carory" id="w79-Ox-ywv"/>
+                    <tabBarItem key="tabBarItem" title="Carory" image="carory.png" id="w79-Ox-ywv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P1-Kj-Ee9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,7 +329,7 @@
         <scene sceneID="2eC-Rr-ZXS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ol-Va-7z9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SetMenu" id="1WZ-8t-RCO"/>
+                    <tabBarItem key="tabBarItem" title="SetMenu" image="menu.png" id="1WZ-8t-RCO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GdK-Ql-QxW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -345,4 +345,9 @@
             <point key="canvasLocation" x="1639" y="405"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="carory.png" width="32" height="32"/>
+        <image name="interval.png" width="32" height="32"/>
+        <image name="menu.png" width="32" height="32"/>
+    </resources>
 </document>
