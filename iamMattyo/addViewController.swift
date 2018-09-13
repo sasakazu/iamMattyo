@@ -7,14 +7,49 @@
 //
 
 import UIKit
+import RealmSwift
 
 class addViewController: UIViewController {
+    
+    
+    @IBOutlet weak var addTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func setAdd(_ sender: Any) {
+        
+        let tranning = Tranning()
+        
+        tranning.name = addTextField.text!
+        
+        
+        do{
+            let realm = try Realm()
+            try realm.write({ () -> Void in
+                realm.add(tranning)
+                
+                print("ToDo Saved")
+            
+            })
+            
+        } catch {
+            
+            print("Save is Faild")
+            
+        }
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        
+        
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

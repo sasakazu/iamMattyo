@@ -79,16 +79,16 @@
             </objects>
             <point key="canvasLocation" x="893.60000000000002" y="405.24737631184411"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Set Menu Table View-->
         <scene sceneID="gQA-Ie-axJ">
             <objects>
-                <tableViewController id="nC9-n4-ZB2" sceneMemberID="viewController">
+                <tableViewController id="nC9-n4-ZB2" customClass="setMenuTableView" customModule="iamMattyo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pQp-W3-r3l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="10d-KL-hVs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="10d-KL-hVs">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10d-KL-hVs" id="e7a-Gq-ocD">
@@ -309,11 +309,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="setAdd:" destination="N54-y1-7Qk" eventType="touchUpInside" id="1Ej-W9-gWZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nvA-7l-2ik"/>
                     </view>
+                    <connections>
+                        <outlet property="addTextField" destination="7As-nY-Nlt" id="Kyn-8N-sVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-IL-G59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

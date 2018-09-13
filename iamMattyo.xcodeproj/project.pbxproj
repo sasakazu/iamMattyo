@@ -13,6 +13,8 @@
 		7333CFB1213F8E3E00F732A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7333CFB0213F8E3E00F732A6 /* Assets.xcassets */; };
 		7333CFB4213F8E3E00F732A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7333CFB2213F8E3E00F732A6 /* LaunchScreen.storyboard */; };
 		7361D0182149289D005E900E /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361D0172149289D005E900E /* addViewController.swift */; };
+		7361D01C214A1477005E900E /* setMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361D01B214A1477005E900E /* setMenuTableView.swift */; };
+		7361D01E214A15CF005E900E /* Tranning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361D01D214A15CF005E900E /* Tranning.swift */; };
 		C45626E715D364B942510205 /* Pods_iamMattyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADC2C4BE88741579AA96696 /* Pods_iamMattyo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		7333CFB3213F8E3E00F732A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7333CFB5213F8E3E00F732A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7361D0172149289D005E900E /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		7361D01B214A1477005E900E /* setMenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setMenuTableView.swift; sourceTree = "<group>"; };
+		7361D01D214A15CF005E900E /* Tranning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tranning.swift; sourceTree = "<group>"; };
 		838F39708C3C5E5F6F901CF4 /* Pods-iamMattyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iamMattyo.release.xcconfig"; path = "Target Support Files/Pods-iamMattyo/Pods-iamMattyo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +87,9 @@
 				7333CFA9213F8E3B00F732A6 /* AppDelegate.swift */,
 				7333CFAB213F8E3B00F732A6 /* ViewController.swift */,
 				7333CFAD213F8E3B00F732A6 /* Main.storyboard */,
+				7361D01B214A1477005E900E /* setMenuTableView.swift */,
 				7361D0172149289D005E900E /* addViewController.swift */,
+				7361D01D214A15CF005E900E /* Tranning.swift */,
 				7333CFB0213F8E3E00F732A6 /* Assets.xcassets */,
 				7333CFB2213F8E3E00F732A6 /* LaunchScreen.storyboard */,
 				7333CFB5213F8E3E00F732A6 /* Info.plist */,
@@ -206,6 +212,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7333CFAC213F8E3B00F732A6 /* ViewController.swift in Sources */,
+				7361D01E214A15CF005E900E /* Tranning.swift in Sources */,
+				7361D01C214A1477005E900E /* setMenuTableView.swift in Sources */,
 				7361D0182149289D005E900E /* addViewController.swift in Sources */,
 				7333CFAA213F8E3B00F732A6 /* AppDelegate.swift in Sources */,
 			);
