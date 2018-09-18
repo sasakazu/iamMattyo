@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gAq-TC-kN0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gAq-TC-kN0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,9 +143,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="RqM-SS-Qqo" kind="show" id="j1h-4Y-ZT9"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -156,10 +153,13 @@
                     <navigationItem key="navigationItem" title="SetMenu" id="Eqb-2B-dJn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="M3P-O7-5kI">
                             <connections>
-                                <segue destination="N54-y1-7Qk" kind="showDetail" id="p4y-vH-vRa"/>
+                                <segue destination="N54-y1-7Qk" kind="show" id="Q7R-EA-0sI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="RqM-SS-Qqo" kind="show" identifier="editContact" id="OzG-8L-ZH1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDW-gd-Krr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,19 +364,6 @@
                                     <action selector="setAdd:" destination="N54-y1-7Qk" eventType="touchUpInside" id="1Ej-W9-gWZ"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JuL-0f-i1z">
-                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="U8b-ph-9m1">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="abY-hB-s6P">
-                                            <connections>
-                                                <action selector="cancel:" destination="N54-y1-7Qk" id="Vj4-fA-2os"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nvA-7l-2ik"/>
@@ -388,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-IL-G59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3068" y="402.54872563718146"/>
+            <point key="canvasLocation" x="3119" y="48"/>
         </scene>
         <!--Menu Detail View Controller-->
         <scene sceneID="F08-pG-NXv">
@@ -409,10 +396,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Qo-mC-OfU"/>
                     </view>
+                    <connections>
+                        <outlet property="menuName" destination="gRU-Ab-Ybf" id="ArL-Et-AC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRs-T7-xp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3840.8000000000002" y="405.24737631184411"/>
+            <point key="canvasLocation" x="3118" y="746"/>
         </scene>
         <!--SetMenu-->
         <scene sceneID="2eC-Rr-ZXS">
